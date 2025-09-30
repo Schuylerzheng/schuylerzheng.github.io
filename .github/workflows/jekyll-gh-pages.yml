@@ -30,7 +30,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: Download Node build artifact
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v3
         with:
           name: node-dist
           path: dist
