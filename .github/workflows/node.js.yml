@@ -33,7 +33,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
           name: node-dist
-          path: dist   # or whatever your output folder is
+          path: dist
     
   run-if-success:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
